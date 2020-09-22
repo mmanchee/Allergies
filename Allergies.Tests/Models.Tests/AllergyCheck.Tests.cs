@@ -6,11 +6,11 @@ namespace Allergies.Tests
   [TestClass]
   public class AllergicTest
   {
+    Allergic allergic = new Allergic();
+
     [TestMethod]
-    public void Is_allergic_to_eggs()
+    public void IsAllergic_to_eggs()
     {
-      
-      Allergic allergic = new Allergic();
       Assert.AreEqual("eggs" , allergic.IsAllergic(1));
     }
   }
